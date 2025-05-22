@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %} {% block title %}Modifier{{ product.name }}{%
+endblock %} {% block body %}
+<h1>Modifier le produit</h1>
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<button class="btn">Mettre à jour</button>
+{{ form_end(form) }}
+
+<a href="{{ path('product_show', { id: product.id }) }}">Retour au produit</a>
+{% endblock %}

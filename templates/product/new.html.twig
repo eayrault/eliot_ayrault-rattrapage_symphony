@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %} {% block title %}Créer un produit{% endblock %}
+{% block body %}
+<h1>Créer un nouveau produit</h1>
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<button class="btn">Enregistrer</button>
+{{ form_end(form) }}
+<a href="{{ path('category_new') }}">Créer une catégorie</a>
+<br />
+<a href="{{ path('home') }}">Retour à l’accueil</a>
+{% endblock %}
